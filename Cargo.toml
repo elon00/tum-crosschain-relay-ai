@@ -1,0 +1,9 @@
+[package]
+name = "tum-crosschain-relay-ai"
+version = "1.0.0"
+edition = "2021"
+authors = ["Martin Luther <martinlutherupa1@gmail.com>"]
+description = "Trustless light-client state relay and Merkle prover"
+license = "MIT"
+
+[dependencies]

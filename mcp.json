@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "tum-crosschain-relay-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "TUM Munich",
+        "PROJECT_TICKER": "TUMRELAY"
+      },
+      "tools": [
+        {
+          "name": "verify_tumrelay_invariants",
+          "description": "Verifies deterministic invariants for TUM Cross-Chain Relay AI on TUM Munich."
+        },
+        {
+          "name": "execute_tumrelay_action",
+          "description": "Executes authenticated Bridge state transition."
+        }
+      ]
+    }
+  }
+}
